@@ -27,7 +27,8 @@ scaled both to support network attached file systems and scale out systems, some
 of complexity and performance tradeoffs for features that are rarely used. The limitations above are mostly due to this legacy baggage.
 Object storage is unshackled by legacy POSIX file systems requirements and a way to think of it is "File systems for the Internet". 
 
-~Scale~ 
+Scale
+-----
 
 Scale is the reason that is typically cited for using object storage, but it can be confusing why this is the case. As an example, ext4 
 claims 1EB scale with billions of files, and XFS supports 8EB volumes with 2^64 files however  looking at the 
@@ -35,5 +36,19 @@ claims 1EB scale with billions of files, and XFS supports 8EB volumes with 2^64 
 on this, they only support a maximum size of 50TB for ext4 and 500TB for XFS. With [Seagate now at 16TB](https://blog.seagate.com/craftsman-ship/hamr-milestone-seagate-achieves-16tb-capacity-on-internal-hamr-test-units/) spinning drives shortly and 
 [Nimbus shipping 100TB SSD](https://nimbusdata.com/products/exadrive-platform/scalable-ssds/), it is no longer even possible to mount an ext4 file system over a single drive (let alone a RAID volume of these drives). 
 
-It is worth examining why a file system "theoretical" capacity is so much lower than the 
+It is worth examining why a file system "theoretical" capacity is so much lower than the claimed number. 
 
+Performance
+-----------
+
+
+
+Cost
+----
+
+Availability
+------------
+
+
+Security
+--------
